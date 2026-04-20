@@ -1,0 +1,382 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-light.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="docs/logo-dark.svg" />
+  <img src="docs/logo-dark.svg" alt="TREK" height="72" />
+</picture>
+
+### Your trips. Your plan. Your server.
+
+A self-hosted, real-time collaborative travel planner — with maps, budgets, packing lists, a journal, and AI built in.
+
+<br />
+
+<a href="https://demo-nomad.pakulat.org"><img alt="Live Demo" src="https://img.shields.io/badge/Live_Demo-try_it_now-111827?style=for-the-badge" /></a>
+&nbsp;
+<a href="https://hub.docker.com/r/mauriceboe/trek"><img alt="Docker" src="https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" /></a>
+&nbsp;
+<a href="https://discord.gg/NhZBDSd4qW"><img alt="Discord" src="https://img.shields.io/badge/Discord-community-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
+
+<br />
+
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/license-AGPL_v3-6B7280?style=flat-square" /></a>
+<a href="https://github.com/mauriceboe/TREK/releases"><img alt="Latest Release" src="https://img.shields.io/github/v/release/mauriceboe/TREK?include_prereleases&style=flat-square&color=6B7280" /></a>
+<a href="https://hub.docker.com/r/mauriceboe/trek"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/mauriceboe/trek?style=flat-square&color=6B7280" /></a>
+<a href="https://github.com/mauriceboe/TREK"><img alt="Stars" src="https://img.shields.io/github/stars/mauriceboe/TREK?style=flat-square&color=6B7280" /></a>
+
+</div>
+
+---
+
+<div align="center">
+
+### See it in action
+
+<video src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4" controls playsinline width="720" muted></video>
+
+<sub>▶︎ <a href="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4">Watch the full 60-second tour</a> — plays directly in the browser and GitHub app.</sub>
+
+</div>
+
+---
+
+## What you get
+
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="50%" align="center"><img src="docs/tiles/planner.svg" alt="Drag & drop planner" width="100%" /></td>
+    <td width="50%" align="center"><img src="docs/tiles/maps.svg" alt="Interactive maps" width="100%" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/tiles/collab.svg" alt="Real-time collaboration" width="100%" /></td>
+    <td align="center"><img src="docs/tiles/budget.svg" alt="Budget tracking" width="100%" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/tiles/packing.svg" alt="Packing lists" width="100%" /></td>
+    <td align="center"><img src="docs/tiles/journal.svg" alt="Journey journal" width="100%" /></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/tiles/vacay.svg" alt="Vacay add-on" width="100%" /></td>
+    <td align="center"><img src="docs/tiles/mcp.svg" alt="AI / MCP integration" width="100%" /></td>
+  </tr>
+</table>
+
+<br />
+
+## Get started in 30 seconds
+
+```bash
+ENCRYPTION_KEY=$(openssl rand -hex 32) docker run -d -p 3000:3000 \
+  -e ENCRYPTION_KEY=$ENCRYPTION_KEY \
+  -v ./data:/app/data -v ./uploads:/app/uploads mauriceboe/trek
+```
+
+Open `http://localhost:3000`. The first user to register becomes admin.
+
+<div align="center">
+
+&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#docker-compose-production">Docker Compose</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#helm-kubernetes">Helm / Kubernetes</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#install-as-app-pwa">Install as PWA</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#reverse-proxy">Reverse Proxy</a>&nbsp;&nbsp;·&nbsp;&nbsp;
+
+</div>
+
+<br />
+
+## Inside TREK
+
+### Trip planning
+
+- **Drag & drop planner** — organise places into day plans with reordering and cross-day moves
+- **Interactive map** — Leaflet or Mapbox GL with 3D buildings, terrain, photo markers, clustering, route visualization
+- **Place search** — Google Places (photos, ratings, hours) or OpenStreetMap (free, no API key)
+- **Day notes** — timestamped, icon-tagged notes with drag-and-drop reordering
+- **Route optimisation** — auto-sort places and export to Google Maps
+- **Weather forecasts** — 16-day via Open-Meteo (no key) + historical climate fallback
+- **Category filter** — show only matching pins on the map
+
+### Travel management
+
+- **Reservations** — flights, accommodations, restaurants with status, confirmation numbers, files
+- **Budget tracking** — category-based expenses with pie chart, per-person / per-day splits, multi-currency
+- **Packing lists** — categories, templates, user assignment, progress tracking
+- **Bag tracking** — optional weight tracking with iOS-style distribution
+- **Document manager** — attach docs, tickets, PDFs to trips / places / reservations (≤ 50 MB each)
+- **PDF export** — full trip plan as PDF with cover page, images, notes
+
+### Mobile & PWA
+
+- **Installable** — iOS and Android, straight from the browser, no App Store needed
+- **Offline support** — Service Worker caches tiles, API, uploads via Workbox
+- **Native feel** — fullscreen standalone, themed status bar, splash screen
+- **Touch optimised** — mobile-specific layouts with safe-area handling
+
+### Collaboration
+
+- **Real-time sync** — WebSocket. Changes appear instantly across all connected users
+- **Multi-user trips** — invite members with role-based access
+- **Invite links** — one-time or reusable links with expiry
+- **SSO (OIDC)** — Google, Apple, Authentik, Keycloak, or any OIDC provider
+- **2FA** — TOTP + backup codes
+- **Collab suite** — group chat, shared notes, polls, day check-ins
+
+### Addons (admin-toggleable)
+
+- **Vacay** — personal vacation planner with calendar, 100+ country holidays, carry-over tracking
+- **Atlas** — world map of visited countries, bucket list, travel stats, streak tracking, liquid-glass UI
+- **Collab** — chat, notes, polls, day-by-day attendance
+- **Journey** — magazine-style travel journal with entries, photos, maps, moods
+- **Dashboard widgets** — currency converter and timezone clocks
+
+### AI / MCP
+
+- **Built-in MCP server** — OAuth 2.1 authenticated. 80+ tools, 27 resources
+- **Granular scopes** — 24 OAuth scopes across 13 permission groups
+- **Full automation** — AI can create trips, plan days, build packing lists, manage budgets, mark countries visited
+- **Pre-built prompts** — `trip-summary`, `packing-list`, `budget-overview`
+- **Addon-aware** — exposes Atlas, Collab, Vacay when those addons are on
+
+### Admin & customisation
+
+- **Dashboard views** — card grid or compact list
+- **Dark mode** — full theme with matching status bar
+- **14 languages** — EN, DE, ES, FR, IT, NL, HU, RU, ZH, ZH-TW, PL, CS, AR (RTL), BR, ID
+- **Admin panel** — users, invites, packing templates, categories, addons, API keys, backups, GitHub history
+- **Auto-backups** — scheduled with configurable retention
+- **Units** — °C/°F, 12h/24h, map tile sources, default coordinates
+
+<br />
+
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/screenshot.png" alt="Dashboard" /></td>
+    <td><img src="docs/screenshots/screenshot-2.png" alt="Trip planner" /></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/screenshot-plan-detail.png" alt="Plan detail" /></td>
+    <td><img src="docs/screenshots/screenshot-bookings.png" alt="Bookings" /></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/screenshot-budget.png" alt="Budget" /></td>
+    <td><img src="docs/screenshots/screenshot-packing.png" alt="Packing" /></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/screenshot-collab.png" alt="Collab" /></td>
+    <td><img src="docs/screenshots/screenshot-trip-mcp.png" alt="MCP" /></td>
+  </tr>
+</table>
+
+<br />
+
+## Tech stack
+
+<div align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js_22-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
+
+Real-time sync via WebSocket (`ws`). State with Zustand. Auth via JWT + OAuth 2.1 + OIDC + TOTP MFA. Weather via Open-Meteo (no key required). Maps with Leaflet and Mapbox GL.
+
+<br />
+
+<h2 id="docker-compose-production">Docker Compose (production)</h2>
+
+<details>
+<summary>Full compose example with secure defaults</summary>
+
+```yaml
+services:
+  app:
+    image: mauriceboe/trek:latest
+    container_name: trek
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+    tmpfs:
+      - /tmp:noexec,nosuid,size=64m
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY:-}   # generate with: openssl rand -hex 32
+      - TZ=${TZ:-UTC}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-}
+      - APP_URL=${APP_URL:-}                 # required for OIDC + email links
+      # - FORCE_HTTPS=true                   # behind a TLS-terminating proxy
+      # - TRUST_PROXY=1
+      # - OIDC_ISSUER=https://auth.example.com
+      # - OIDC_CLIENT_ID=trek
+      # - OIDC_CLIENT_SECRET=supersecret
+      # - OIDC_DISPLAY_NAME=SSO
+      # - OIDC_ADMIN_CLAIM=groups
+      # - OIDC_ADMIN_VALUE=app-trek-admins
+    volumes:
+      - ./data:/app/data
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+```
+
+Then:
+
+```bash
+docker compose up -d
+```
+
+**HTTPS notes:** `FORCE_HTTPS=true` is optional — it adds a 301 redirect, HSTS, CSP upgrade-insecure-requests, and forces the `secure` cookie flag. Only use it behind a TLS-terminating reverse proxy. `TRUST_PROXY=1` tells Express how many proxies sit in front so real client IPs and `X-Forwarded-Proto` work.
+
+</details>
+
+<h2 id="helm-kubernetes">Helm (Kubernetes)</h2>
+
+```bash
+helm repo add trek https://mauriceboe.github.io/TREK
+helm repo update
+helm install trek trek/trek
+```
+
+See [`charts/README.md`](https://github.com/mauriceboe/TREK/blob/main/charts/README.md) for values.
+
+<h2 id="install-as-app-pwa">Install as App (PWA)</h2>
+
+TREK works as a Progressive Web App — no App Store needed.
+
+1. Open TREK in the browser (HTTPS required)
+2. **iOS**: Share ▸ *Add to Home Screen*
+3. **Android**: Menu ▸ *Install app* (or *Add to Home Screen*)
+
+TREK then launches fullscreen with its own icon, just like a native app.
+
+<br />
+
+## Updating
+
+**Docker Compose:**
+
+```bash
+docker compose pull && docker compose up -d
+```
+
+**Docker run** — reuse the original volume paths:
+
+```bash
+docker pull mauriceboe/trek
+docker rm -f trek
+docker run -d --name trek -p 3000:3000 -v ./data:/app/data -v ./uploads:/app/uploads --restart unless-stopped mauriceboe/trek
+```
+
+> Not sure which paths you used? `docker inspect trek --format '{{json .Mounts}}'` before removing the container.
+
+Your data stays in the mounted `data` and `uploads` volumes — updates never touch it.
+
+<h3>Rotating the Encryption Key</h3>
+
+If you need to rotate `ENCRYPTION_KEY` (e.g. upgrading from a version that derived encryption from `JWT_SECRET`):
+
+```bash
+docker exec -it trek node --import tsx scripts/migrate-encryption.ts
+```
+
+The script creates a timestamped DB backup before making changes and prompts for old + new keys (input is not echoed).
+
+<h2 id="reverse-proxy">Reverse Proxy</h2>
+
+For production, put TREK behind a TLS-terminating reverse proxy. TREK uses WebSockets for real-time sync, so the proxy **must** support WebSocket upgrades on `/ws`.
+
+<details>
+<summary>Nginx</summary>
+
+```nginx
+server {
+    listen 80;
+    server_name trek.yourdomain.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name trek.yourdomain.com;
+
+    ssl_certificate     /etc/ssl/fullchain.pem;
+    ssl_certificate_key /etc/ssl/privkey.pem;
+
+    client_max_body_size 50m;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location /ws {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+    }
+}
+```
+
+</details>
+
+<details>
+<summary>Caddy</summary>
+
+```caddy
+trek.yourdomain.com {
+    reverse_proxy localhost:3000
+}
+```
+
+Caddy handles TLS and WebSockets automatically.
+
+</details>
+
+<br />
+
+## Community
+
+- **Discord** — <https://discord.gg/NhZBDSd4qW>
+- **Issues** — <https://github.com/mauriceboe/TREK/issues>
+- **Discussions** — <https://github.com/mauriceboe/TREK/discussions>
+
+<br />
+
+## License
+
+TREK is [AGPL v3](LICENSE). Self-host freely for personal or internal company use. If you modify and offer TREK as a network service to third parties, your modifications must be open-sourced under the same licence.
+
+<br />
+
+<div align="center">
+
+<sub>Made with care &nbsp;·&nbsp; <a href="https://github.com/mauriceboe/TREK">Star on GitHub</a></sub>
+
+</div>

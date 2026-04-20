@@ -366,14 +366,6 @@ Caddy handles TLS and WebSockets automatically.
 
 <br />
 
-## Community
-
-- **Discord** — <https://discord.gg/NhZBDSd4qW>
-- **Issues** — <https://github.com/mauriceboe/TREK/issues>
-- **Discussions** — <https://github.com/mauriceboe/TREK/discussions>
-
-<br />
-
 ## License
 
 TREK is [AGPL v3](LICENSE). Self-host freely for personal or internal company use. If you modify and offer TREK as a network service to third parties, your modifications must be open-sourced under the same licence.

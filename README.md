@@ -33,13 +33,7 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 ### See it in action
 
-<video src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4"
-       poster="https://raw.githubusercontent.com/mauriceboe/test/main/docs/video-poster.svg"
-       controls playsinline width="720" muted></video>
-
-<a href="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4"><img src="docs/video-poster.svg" alt="Watch the 60-second tour" width="720" /></a>
-
-<sub>▶︎ <a href="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4">Full 60-second tour</a> — tap the thumbnail if the player doesn&rsquo;t embed in your client (GitHub mobile app).</sub>
+https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4
 
 </div>
 
@@ -47,14 +41,22 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 ## What you get
 
-<p align="center"><img src="docs/tiles/planner.svg" alt="Drag and drop planner"  width="720" /></p>
-<p align="center"><img src="docs/tiles/maps.svg"    alt="Interactive maps"      width="720" /></p>
-<p align="center"><img src="docs/tiles/collab.svg"  alt="Real-time collaboration" width="720" /></p>
-<p align="center"><img src="docs/tiles/budget.svg"  alt="Budget tracking"       width="720" /></p>
-<p align="center"><img src="docs/tiles/packing.svg" alt="Packing lists"         width="720" /></p>
-<p align="center"><img src="docs/tiles/journal.svg" alt="Journey journal"       width="720" /></p>
-<p align="center"><img src="docs/tiles/vacay.svg"   alt="Vacay add-on"          width="720" /></p>
-<p align="center"><img src="docs/tiles/mcp.svg"     alt="AI and MCP integration" width="720" /></p>
+<p align="center">
+  <img src="docs/tiles/planner.svg" alt="Drag and drop planner"    width="340" />
+  <img src="docs/tiles/maps.svg"    alt="Interactive maps"         width="340" />
+</p>
+<p align="center">
+  <img src="docs/tiles/collab.svg"  alt="Real-time collaboration"  width="340" />
+  <img src="docs/tiles/budget.svg"  alt="Budget tracking"          width="340" />
+</p>
+<p align="center">
+  <img src="docs/tiles/packing.svg" alt="Packing lists"            width="340" />
+  <img src="docs/tiles/journal.svg" alt="Journey journal"          width="340" />
+</p>
+<p align="center">
+  <img src="docs/tiles/vacay.svg"   alt="Vacay add-on"             width="340" />
+  <img src="docs/tiles/mcp.svg"     alt="AI and MCP integration"   width="340" />
+</p>
 
 <br />
 

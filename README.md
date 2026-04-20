@@ -33,6 +33,12 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 ### See it in action
 
+
+
+https://github.com/user-attachments/assets/51dcfaf2-3106-4f3e-bd47-c43990970eaa
+
+
+
 <video src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4"
        poster="https://raw.githubusercontent.com/mauriceboe/test/main/docs/video-poster.svg"
        controls playsinline width="720" muted>

@@ -59,6 +59,101 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
   <img src="docs/tiles/grid-desktop.svg" alt="TREK feature tiles" width="100%" />
 </picture>
 
+<details>
+<summary><b>See all features</b></summary>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧭 Trip planning
+
+- **Drag & drop planner** — organise places into day plans with reordering and cross-day moves
+- **Interactive map** — Leaflet or Mapbox GL with 3D buildings, terrain, photo markers, clustering, route visualization
+- **Place search** — Google Places (photos, ratings, hours) or OpenStreetMap (free, no API key)
+- **Day notes** — timestamped, icon-tagged notes with drag-and-drop reordering
+- **Route optimisation** — auto-sort places and export to Google Maps
+- **Weather forecasts** — 16-day via Open-Meteo (no key) + historical climate fallback
+- **Category filter** — show only matching pins on the map
+
+</td>
+<td width="50%" valign="top">
+
+#### 🧳 Travel management
+
+- **Reservations** — flights, accommodations, restaurants with status, confirmation numbers, files
+- **Budget tracking** — category-based expenses with pie chart, per-person / per-day splits, multi-currency
+- **Packing lists** — categories, templates, user assignment, progress tracking
+- **Bag tracking** — optional weight tracking with iOS-style distribution
+- **Document manager** — attach docs, tickets, PDFs to trips / places / reservations (≤ 50 MB each)
+- **PDF export** — full trip plan as PDF with cover page, images, notes
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 👥 Collaboration
+
+- **Real-time sync** — WebSocket. Changes appear instantly across all connected users
+- **Multi-user trips** — invite members with role-based access
+- **Invite links** — one-time or reusable links with expiry
+- **SSO (OIDC)** — Google, Apple, Authentik, Keycloak, or any OIDC provider
+- **2FA** — TOTP + backup codes
+- **Collab suite** — group chat, shared notes, polls, day check-ins
+
+</td>
+<td width="50%" valign="top">
+
+#### 📱 Mobile & PWA
+
+- **Installable** — iOS and Android, straight from the browser, no App Store needed
+- **Offline support** — Service Worker caches tiles, API, uploads via Workbox
+- **Native feel** — fullscreen standalone, themed status bar, splash screen
+- **Touch optimised** — mobile-specific layouts with safe-area handling
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🧩 Addons (admin-toggleable)
+
+- **Vacay** — personal vacation planner with calendar, 100+ country holidays, carry-over tracking
+- **Atlas** — world map of visited countries, bucket list, travel stats, streak tracking, liquid-glass UI
+- **Collab** — chat, notes, polls, day-by-day attendance
+- **Journey** — magazine-style travel journal with entries, photos, maps, moods
+- **Dashboard widgets** — currency converter and timezone clocks
+
+</td>
+<td width="50%" valign="top">
+
+#### 🤖 AI / MCP
+
+- **Built-in MCP server** — OAuth 2.1 authenticated. 80+ tools, 27 resources
+- **Granular scopes** — 24 OAuth scopes across 13 permission groups
+- **Full automation** — AI can create trips, plan days, build packing lists, manage budgets, mark countries visited
+- **Pre-built prompts** — `trip-summary`, `packing-list`, `budget-overview`
+- **Addon-aware** — exposes Atlas, Collab, Vacay when those addons are on
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+#### ⚙️ Admin & customisation
+
+- **Dashboard views** — card grid or compact list · **Dark mode** — full theme with matching status bar
+- **14 languages** — EN, DE, ES, FR, IT, NL, HU, RU, ZH, ZH-TW, PL, CS, AR (RTL), BR, ID
+- **Admin panel** — users, invites, packing templates, categories, addons, API keys, backups, GitHub history
+- **Auto-backups** — scheduled with configurable retention · **Units** — °C/°F, 12h/24h, map tile sources, default coordinates
+
+</td>
+</tr>
+</table>
+
+</details>
+
 <br />
 
 ## Get started in 30 seconds
@@ -76,70 +171,6 @@ Open `http://localhost:3000`. The first user to register becomes admin.
 &nbsp;&nbsp;·&nbsp;&nbsp;<a href="#docker-compose-production">Docker Compose</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#helm-kubernetes">Helm / Kubernetes</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#install-as-app-pwa">Install as PWA</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="#reverse-proxy">Reverse Proxy</a>&nbsp;&nbsp;·&nbsp;&nbsp;
 
 </div>
-
-<br />
-
-## Inside TREK
-
-### Trip planning
-
-- **Drag & drop planner** — organise places into day plans with reordering and cross-day moves
-- **Interactive map** — Leaflet or Mapbox GL with 3D buildings, terrain, photo markers, clustering, route visualization
-- **Place search** — Google Places (photos, ratings, hours) or OpenStreetMap (free, no API key)
-- **Day notes** — timestamped, icon-tagged notes with drag-and-drop reordering
-- **Route optimisation** — auto-sort places and export to Google Maps
-- **Weather forecasts** — 16-day via Open-Meteo (no key) + historical climate fallback
-- **Category filter** — show only matching pins on the map
-
-### Travel management
-
-- **Reservations** — flights, accommodations, restaurants with status, confirmation numbers, files
-- **Budget tracking** — category-based expenses with pie chart, per-person / per-day splits, multi-currency
-- **Packing lists** — categories, templates, user assignment, progress tracking
-- **Bag tracking** — optional weight tracking with iOS-style distribution
-- **Document manager** — attach docs, tickets, PDFs to trips / places / reservations (≤ 50 MB each)
-- **PDF export** — full trip plan as PDF with cover page, images, notes
-
-### Mobile & PWA
-
-- **Installable** — iOS and Android, straight from the browser, no App Store needed
-- **Offline support** — Service Worker caches tiles, API, uploads via Workbox
-- **Native feel** — fullscreen standalone, themed status bar, splash screen
-- **Touch optimised** — mobile-specific layouts with safe-area handling
-
-### Collaboration
-
-- **Real-time sync** — WebSocket. Changes appear instantly across all connected users
-- **Multi-user trips** — invite members with role-based access
-- **Invite links** — one-time or reusable links with expiry
-- **SSO (OIDC)** — Google, Apple, Authentik, Keycloak, or any OIDC provider
-- **2FA** — TOTP + backup codes
-- **Collab suite** — group chat, shared notes, polls, day check-ins
-
-### Addons (admin-toggleable)
-
-- **Vacay** — personal vacation planner with calendar, 100+ country holidays, carry-over tracking
-- **Atlas** — world map of visited countries, bucket list, travel stats, streak tracking, liquid-glass UI
-- **Collab** — chat, notes, polls, day-by-day attendance
-- **Journey** — magazine-style travel journal with entries, photos, maps, moods
-- **Dashboard widgets** — currency converter and timezone clocks
-
-### AI / MCP
-
-- **Built-in MCP server** — OAuth 2.1 authenticated. 80+ tools, 27 resources
-- **Granular scopes** — 24 OAuth scopes across 13 permission groups
-- **Full automation** — AI can create trips, plan days, build packing lists, manage budgets, mark countries visited
-- **Pre-built prompts** — `trip-summary`, `packing-list`, `budget-overview`
-- **Addon-aware** — exposes Atlas, Collab, Vacay when those addons are on
-
-### Admin & customisation
-
-- **Dashboard views** — card grid or compact list
-- **Dark mode** — full theme with matching status bar
-- **14 languages** — EN, DE, ES, FR, IT, NL, HU, RU, ZH, ZH-TW, PL, CS, AR (RTL), BR, ID
-- **Admin panel** — users, invites, packing templates, categories, addons, API keys, backups, GitHub history
-- **Auto-backups** — scheduled with configurable retention
-- **Units** — °C/°F, 12h/24h, map tile sources, default coordinates
 
 <br />
 

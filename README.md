@@ -366,6 +366,60 @@ Caddy handles TLS and WebSockets automatically.
 
 <br />
 
+## Environment variables
+
+<details>
+<summary><b>Full reference</b></summary>
+
+<br />
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| **Core** | | |
+| `PORT` | Server port | `3000` |
+| `NODE_ENV` | Environment (`production` / `development`) | `production` |
+| `ENCRYPTION_KEY` | At-rest encryption key for stored secrets (API keys, MFA, SMTP, OIDC). Recommended: generate with `openssl rand -hex 32`. If unset, falls back to `data/.jwt_secret` (existing installs) or auto-generates a key (fresh installs). | Auto |
+| `TZ` | Timezone for logs, reminders and cron jobs (e.g. `Europe/Berlin`) | `UTC` |
+| `LOG_LEVEL` | `info` = concise user actions, `debug` = verbose details | `info` |
+| `DEFAULT_LANGUAGE` | Default language on the login page for users with no saved preference. Browser/OS language is auto-detected first; this is the fallback. Supported: `de`, `en`, `es`, `fr`, `hu`, `nl`, `br`, `cs`, `pl`, `ru`, `zh`, `zh-TW`, `it`, `ar` | `en` |
+| `ALLOWED_ORIGINS` | Comma-separated origins for CORS and email links | same-origin |
+| `FORCE_HTTPS` | Optional. When `true`: 301-redirects HTTP to HTTPS, sends HSTS, adds CSP `upgrade-insecure-requests`, forces the session cookie `secure` flag. Useful behind a TLS-terminating reverse proxy. Requires `TRUST_PROXY`. | `false` |
+| `COOKIE_SECURE` | Controls the `secure` flag on the `trek_session` cookie. Auto-derived: on when `NODE_ENV=production` or `FORCE_HTTPS=true`. Escape hatch: set `false` to allow session cookies over plain HTTP. Not recommended in production. | auto |
+| `TRUST_PROXY` | Number of trusted reverse proxies. Tells Express to read client IP from `X-Forwarded-For` and protocol from `X-Forwarded-Proto`. Defaults to `1` in production; off in dev unless set. | `1` |
+| `ALLOW_INTERNAL_NETWORK` | Allow outbound requests to private/RFC-1918 IPs (e.g. Immich on your LAN). Loopback and link-local addresses remain blocked. | `false` |
+| `APP_URL` | Public base URL of this instance (e.g. `https://trek.example.com`). Required when OIDC is enabled; used as base for email notification links. | — |
+| **OIDC / SSO** | | |
+| `OIDC_ISSUER` | OpenID Connect provider URL | — |
+| `OIDC_CLIENT_ID` | OIDC client ID | — |
+| `OIDC_CLIENT_SECRET` | OIDC client secret | — |
+| `OIDC_DISPLAY_NAME` | Label shown on the SSO login button | `SSO` |
+| `OIDC_ONLY` | Force SSO-only mode: disables password login + registration, regardless of Admin > Settings. The first SSO login becomes admin. | `false` |
+| `OIDC_ADMIN_CLAIM` | OIDC claim used to identify admin users | — |
+| `OIDC_ADMIN_VALUE` | Value of the OIDC claim that grants admin role | — |
+| `OIDC_SCOPE` | Space-separated OIDC scopes. **Fully replaces** the default — always include `openid email profile`. | `openid email profile` |
+| `OIDC_DISCOVERY_URL` | Override the auto-constructed OIDC discovery endpoint (e.g. Authentik: `.../application/o/trek/.well-known/openid-configuration`) | — |
+| **Initial setup** | | |
+| `ADMIN_EMAIL` | Email for the first admin on initial boot. Must be set together with `ADMIN_PASSWORD`. If either is omitted a random password is printed to the server log. No effect once a user exists. | `admin@trek.local` |
+| `ADMIN_PASSWORD` | Password for the first admin on initial boot. Pairs with `ADMIN_EMAIL`. | random |
+| **Other** | | |
+| `DEMO_MODE` | Enable demo mode (hourly data resets) | `false` |
+| `MCP_RATE_LIMIT` | Max MCP API requests per user per minute | `300` |
+| `MCP_MAX_SESSION_PER_USER` | Max concurrent MCP sessions per user | `20` |
+
+</details>
+
+<br />
+
+## Data & Backups
+
+- **Database** — SQLite, stored in `./data/travel.db`
+- **Uploads** — stored in `./uploads/`
+- **Logs** — `./data/logs/trek.log` (auto-rotated)
+- **Backups** — create and restore via Admin Panel
+- **Auto-Backups** — configurable schedule and retention in Admin Panel
+
+<br />
+
 ## License
 
 TREK is [AGPL v3](LICENSE). Self-host freely for personal or internal company use. If you modify and offer TREK as a network service to third parties, your modifications must be open-sourced under the same licence.

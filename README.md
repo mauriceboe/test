@@ -17,6 +17,8 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 <a href="https://hub.docker.com/r/mauriceboe/trek"><img alt="Docker" src="https://img.shields.io/badge/Docker-ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" /></a>
 &nbsp;
 <a href="https://discord.gg/NhZBDSd4qW"><img alt="Discord" src="https://img.shields.io/badge/Discord-community-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
+&nbsp;
+<a href="https://kanban.pakulat.org"><img alt="Roadmap" src="https://img.shields.io/badge/Roadmap-public_board-0EA5E9?style=for-the-badge&logo=trello&logoColor=white" /></a>
 
 <br />
 

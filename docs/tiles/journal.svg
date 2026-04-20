@@ -8,13 +8,13 @@
     <g transform="translate(390 22) scale(6)" fill="none" stroke="#9A2F58" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
       <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
     </g>
-    <rect x="438" y="30" width="52" height="52" rx="14" fill="#FFFFFF" opacity="0.7"/>
-    <g transform="translate(451 43) scale(1.08)" fill="none" stroke="#9A2F58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="436" y="28" width="56" height="56" rx="14" fill="#FFFFFF" opacity="0.7"/>
+    <g transform="translate(450 42) scale(1.15)" fill="none" stroke="#9A2F58" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
     </g>
-    <text x="36" y="60" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="2.4" fill="#9A2F58">JOURNEY</text>
-    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">A journal for</text>
-    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#9A2F58">every trip</text>
-    <text x="36" y="222" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="500" fill="#6E3345">Magazine-style entries with photos, maps, moods</text>
+    <text x="36" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" letter-spacing="2.8" fill="#9A2F58">JOURNEY</text>
+    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">A journal for</text>
+    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#9A2F58">every trip</text>
+    <text x="36" y="224" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="500" fill="#6E3345">Magazine entries, photos, maps</text>
   </g>
 </svg>

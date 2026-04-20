@@ -8,13 +8,13 @@
     <g transform="translate(390 22) scale(6)" fill="none" stroke="#8A6A1E" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
       <path d="M20 12V8a2 2 0 0 0-2-2H4a2 2 0 0 1 0-4h14v4"/><path d="M2 6v14a2 2 0 0 0 2 2h18v-8H16a2 2 0 0 1 0-4h6"/>
     </g>
-    <rect x="438" y="30" width="52" height="52" rx="14" fill="#FFFFFF" opacity="0.7"/>
-    <g transform="translate(451 43) scale(1.08)" fill="none" stroke="#8A6A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="436" y="28" width="56" height="56" rx="14" fill="#FFFFFF" opacity="0.7"/>
+    <g transform="translate(450 42) scale(1.15)" fill="none" stroke="#8A6A1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M20 12V8a2 2 0 0 0-2-2H4a2 2 0 0 1 0-4h14v4"/><path d="M2 6v14a2 2 0 0 0 2 2h18v-8H16a2 2 0 0 1 0-4h6"/>
     </g>
-    <text x="36" y="60" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="2.4" fill="#8A6A1E">BUDGET</text>
-    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">Track costs</text>
-    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#8A6A1E">per person</text>
-    <text x="36" y="222" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="500" fill="#6B5523">Categories, pie chart, multi-currency, smart splits</text>
+    <text x="36" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" letter-spacing="2.8" fill="#8A6A1E">BUDGET</text>
+    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">Track costs</text>
+    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#8A6A1E">per person</text>
+    <text x="36" y="224" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="500" fill="#6B5523">Pie chart, multi-currency, splits</text>
   </g>
 </svg>

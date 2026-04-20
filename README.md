@@ -42,20 +42,19 @@ https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4
 ## What you get
 
 <p align="center">
-  <img src="docs/tiles/planner.svg" alt="Drag and drop planner"    width="340" />
-  <img src="docs/tiles/maps.svg"    alt="Interactive maps"         width="340" />
+  <img src="docs/tiles/planner.svg"  alt="Drag and drop planner"    width="230" />
+  <img src="docs/tiles/maps.svg"     alt="Interactive maps"         width="230" />
+  <img src="docs/tiles/collab.svg"   alt="Real-time collaboration"  width="230" />
 </p>
 <p align="center">
-  <img src="docs/tiles/collab.svg"  alt="Real-time collaboration"  width="340" />
-  <img src="docs/tiles/budget.svg"  alt="Budget tracking"          width="340" />
+  <img src="docs/tiles/budget.svg"   alt="Budget tracking"          width="230" />
+  <img src="docs/tiles/packing.svg"  alt="Packing lists"            width="230" />
+  <img src="docs/tiles/journal.svg"  alt="Journey journal"          width="230" />
 </p>
 <p align="center">
-  <img src="docs/tiles/packing.svg" alt="Packing lists"            width="340" />
-  <img src="docs/tiles/journal.svg" alt="Journey journal"          width="340" />
-</p>
-<p align="center">
-  <img src="docs/tiles/vacay.svg"   alt="Vacay add-on"             width="340" />
-  <img src="docs/tiles/mcp.svg"     alt="AI and MCP integration"   width="340" />
+  <img src="docs/tiles/vacay.svg"    alt="Vacay add-on"             width="230" />
+  <img src="docs/tiles/mcp.svg"      alt="AI and MCP integration"   width="230" />
+  <img src="docs/tiles/selfhost.svg" alt="Self-hosted"              width="230" />
 </p>
 
 <br />

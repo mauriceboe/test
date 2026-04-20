@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-label="SELF-HOSTED: Runs on your server">
+  <defs>
+    <clipPath id="r"><rect width="520" height="260" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="520" height="260" fill="#E4E6EB"/>
+    <circle cx="520" cy="0" r="220" fill="#FFFFFF" opacity="0.35"/>
+    <g transform="translate(390 22) scale(6)" fill="none" stroke="#2D3544" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
+      <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+    </g>
+    <rect x="436" y="28" width="56" height="56" rx="14" fill="#FFFFFF" opacity="0.7"/>
+    <g transform="translate(450 42) scale(1.15)" fill="none" stroke="#2D3544" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+    </g>
+    <text x="36" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" letter-spacing="2.8" fill="#2D3544">SELF-HOSTED</text>
+    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">Runs on</text>
+    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#2D3544">your server</text>
+    <text x="36" y="224" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="500" fill="#414958">Docker, SQLite, AGPL — your data, yours</text>
+  </g>
+</svg>

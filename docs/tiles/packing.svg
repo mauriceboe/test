@@ -8,13 +8,13 @@
     <g transform="translate(390 22) scale(6)" fill="none" stroke="#5443A5" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
     </g>
-    <rect x="438" y="30" width="52" height="52" rx="14" fill="#FFFFFF" opacity="0.7"/>
-    <g transform="translate(451 43) scale(1.08)" fill="none" stroke="#5443A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="436" y="28" width="56" height="56" rx="14" fill="#FFFFFF" opacity="0.7"/>
+    <g transform="translate(450 42) scale(1.15)" fill="none" stroke="#5443A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
     </g>
-    <text x="36" y="60" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="14" font-weight="800" letter-spacing="2.4" fill="#5443A5">PACKING</text>
-    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">Lists, sorted.</text>
-    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="46" font-weight="800" letter-spacing="-1.2" fill="#5443A5">by category</text>
-    <text x="36" y="222" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="16" font-weight="500" fill="#4A3E72">Templates, bag tracking, weight distribution</text>
+    <text x="36" y="62" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="800" letter-spacing="2.8" fill="#5443A5">PACKING</text>
+    <text x="36" y="132" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#1A1A1F">Lists, sorted.</text>
+    <text x="36" y="184" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, Segoe UI, Roboto, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.2" fill="#5443A5">by category</text>
+    <text x="36" y="224" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="500" fill="#4A3E72">Templates, bag tracking, weights</text>
   </g>
 </svg>

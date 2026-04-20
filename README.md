@@ -31,11 +31,12 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 <div align="center">
 
-<!-- Mobile (≤768px): animated GIF plays inline. Desktop: invisible 1x1
-     spacer, the MP4 user-attachments URL below auto-embeds as player. -->
+<!-- Default = GIF (mobile-safe). Desktop viewports override to a 1x1
+     spacer so only the MP4 user-attachments URL below renders as the
+     inline player. GitHub strips some media queries but keeps min-width. -->
 <picture>
-  <source media="(max-width: 768px)" srcset="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.gif" />
-  <img src="https://github.com/mauriceboe/test/raw/main/.github/assets/spacer.png" alt="" width="1" height="1" />
+  <source media="(min-width: 769px)" srcset="https://github.com/mauriceboe/test/raw/main/.github/assets/spacer.png" />
+  <img src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.gif" alt="TREK — 60-second tour" />
 </picture>
 
 https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b

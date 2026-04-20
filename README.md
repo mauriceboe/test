@@ -35,13 +35,6 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b
 
-
-<video src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.mp4"
-       poster="https://raw.githubusercontent.com/mauriceboe/test/main/docs/video-poster.svg"
-       controls playsinline width="640" muted>
-  Your client can&rsquo;t render this video inline. Open the repo on github.com to watch.
-</video>
-
 <sub>60-second tour · trip planner, maps, collab, budget, MCP</sub>
 
 </div>

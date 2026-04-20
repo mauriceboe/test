@@ -31,11 +31,7 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 <div align="center">
 
-<p><b>See it in action</b></p>
-
 https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b
-
-<sub>60-second tour · trip planner, maps, collab, budget, MCP</sub>
 
 </div>
 

@@ -18,7 +18,7 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 &nbsp;
 <a href="https://discord.gg/NhZBDSd4qW"><img alt="Discord" src="https://img.shields.io/badge/Discord-community-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
 &nbsp;
-<a href="https://kanban.pakulat.org/shared/I4wxF6inOOMB0C6hH6kQm3efyNxFjwyI"><img alt="Roadmap" src="https://img.shields.io/badge/Roadmap-public_board-0EA5E9?style=for-the-badge&logo=trello&logoColor=white" /></a>
+<a href="https://kanban.pakulat.org/shared/I4wxF6inOOMB0C6hH6kQm3efyNxFjwyI"><img alt="Roadmap" src="https://img.shields.io/badge/Roadmap-board-0EA5E9?style=for-the-badge&logo=trello&logoColor=white" /></a>
 
 <br />
 

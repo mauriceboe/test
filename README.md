@@ -41,11 +41,11 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
   <img src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.gif" alt="TREK — 60-second tour" />
 </picture>
 
-<sub><sub>
+<details open><summary>&nbsp;</summary>
 
 https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b
 
-</sub></sub>
+</details>
 
 </div>
 

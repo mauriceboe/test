@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-light.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="docs/logo-dark.svg" />
-  <img src="docs/logo-dark.svg" alt="TREK" height="72" />
+  <source media="(prefers-color-scheme: dark)" srcset="docs/logo-trek-light.gif" />
+  <source media="(prefers-color-scheme: light)" srcset="docs/logo-trek-dark.gif" />
+  <img src="docs/logo-trek-dark.gif" alt="TREK" height="96" />
 </picture>
 
 ### Your trips. Your plan. Your server.

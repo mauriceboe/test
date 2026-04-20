@@ -253,6 +253,8 @@ docker compose up -d
 
 </details>
 
+<br />
+
 <h2 id="helm-kubernetes">Helm (Kubernetes)</h2>
 
 ```bash

@@ -35,6 +35,19 @@ https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b
 
 </div>
 
+<br />
+
+<div align="center">
+  <a href="docs/screenshots/dashboard.png"><img src="docs/screenshots/dashboard.png" alt="Dashboard" width="49%" /></a>
+  <a href="docs/screenshots/trip-planner.png"><img src="docs/screenshots/trip-planner.png" alt="Trip planner with 3D map" width="49%" /></a>
+  <a href="docs/screenshots/journey.png"><img src="docs/screenshots/journey.png" alt="Journey journal" width="49%" /></a>
+  <a href="docs/screenshots/budget.png"><img src="docs/screenshots/budget.png" alt="Budget tracker" width="49%" /></a>
+  <a href="docs/screenshots/atlas.png"><img src="docs/screenshots/atlas.png" alt="Atlas · visited countries" width="49%" /></a>
+  <a href="docs/screenshots/vacay.png"><img src="docs/screenshots/vacay.png" alt="Vacay planner" width="49%" /></a>
+  <a href="docs/screenshots/trip-iceland.png"><img src="docs/screenshots/trip-iceland.png" alt="Iceland Ring Road" width="49%" /></a>
+  <a href="docs/screenshots/admin.png"><img src="docs/screenshots/admin.png" alt="Admin panel" width="49%" /></a>
+</div>
+
 ---
 
 ## What you get
@@ -125,29 +138,6 @@ Open `http://localhost:3000`. The first user to register becomes admin.
 - **Admin panel** — users, invites, packing templates, categories, addons, API keys, backups, GitHub history
 - **Auto-backups** — scheduled with configurable retention
 - **Units** — °C/°F, 12h/24h, map tile sources, default coordinates
-
-<br />
-
-## Screenshots
-
-<table>
-  <tr>
-    <td><img src="docs/screenshots/screenshot.png" alt="Dashboard" /></td>
-    <td><img src="docs/screenshots/screenshot-2.png" alt="Trip planner" /></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/screenshot-plan-detail.png" alt="Plan detail" /></td>
-    <td><img src="docs/screenshots/screenshot-bookings.png" alt="Bookings" /></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/screenshot-budget.png" alt="Budget" /></td>
-    <td><img src="docs/screenshots/screenshot-packing.png" alt="Packing" /></td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/screenshot-collab.png" alt="Collab" /></td>
-    <td><img src="docs/screenshots/screenshot-trip-mcp.png" alt="MCP" /></td>
-  </tr>
-</table>
 
 <br />
 

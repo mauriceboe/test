@@ -33,13 +33,19 @@ A self-hosted, real-time collaborative travel planner — with maps, budgets, pa
 
 <!-- Default = GIF (mobile-safe). Desktop viewports override to a 1x1
      spacer so only the MP4 user-attachments URL below renders as the
-     inline player. -->
+     inline player. The URL is nested in <sub> tags so that, on
+     clients that don't auto-embed it (GitHub mobile app), it still
+     shows but at a much smaller visual weight. -->
 <picture>
   <source media="(min-width: 769px)" srcset="https://github.com/mauriceboe/test/raw/main/.github/assets/spacer.png" />
   <img src="https://github.com/mauriceboe/test/raw/main/.github/assets/TREK1.gif" alt="TREK — 60-second tour" />
 </picture>
 
+<sub><sub>
+
 https://github.com/user-attachments/assets/68c39315-5750-43f4-ad5e-a5b4d950a80b
+
+</sub></sub>
 
 </div>
 
